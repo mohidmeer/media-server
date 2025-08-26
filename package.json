@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon main.js",
-    "start": "node main.js"
+    "start": "node main.js",
+    "deploy":"npm i &&  npm install -g pm2 && pm2 delete my-app || true && pm2 start npm --name my-app -- start"
   },
   "author": "",
   "license": "ISC",
